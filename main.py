@@ -1,5 +1,6 @@
 import tkinter as tk
 import calculatorFrame as cf
+import os
 
 __author__ = "Juan Bautista"
 __version__ = "1.0.0"
@@ -12,6 +13,7 @@ class App(tk.Tk):
         super().__init__()
         self.title('Calculator')
         self.geometry('200x350')
+        self.iconbitmap(os.path.abspath('./Images/linux96.ico'))
 
 
 if __name__ == "__main__":

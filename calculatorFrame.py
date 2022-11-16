@@ -40,6 +40,8 @@ class CalculatorFrame(ttk.Frame):
 
     def __init__(self, container, serial_port='COM1', speed=9600):
         """
+        create an object of type calculatorFrame
+
         Parameters
         ----------
         container : str
@@ -66,16 +68,6 @@ class CalculatorFrame(ttk.Frame):
         self.rowconfigure(4, weight=1)
         self.rowconfigure(5, weight=1)
         self.rowconfigure(6, weight=1)
-
-        self.display_result = ttk.Entry(self,
-                                        font=("Arial", 24),
-                                        justify=tk.RIGHT)
-        self.display_result.insert(0, "")
-        self.display_result.grid(row=0,
-                                 column=0,
-                                 columnspan=4,
-                                 rowspan=1,
-                                 sticky="nsew")
 
         self.display_input = ttk.Entry(self,
                                        font=("Arial", 24),
@@ -182,6 +174,11 @@ class CalculatorFrame(ttk.Frame):
         Converts the result of the operation to a binary number.
 
         This conversion makes sure that the result has a certain number of binary numbers.
+
+        Returns
+        -------
+        str
+            the result of the operation to a binary number, the result has a certain number of binary numbers.
         """
         text_content = format(int(self.display_input.get()), "b")
         return "{:>4}".format(text_content)
@@ -225,6 +222,8 @@ class CalculatorFrame(ttk.Frame):
         otherwise it will be concaned to the left of what 
         is in the calculator input.
 
+        Parameters
+        ----------
         symbol : str
             The symbol to enter
         """
