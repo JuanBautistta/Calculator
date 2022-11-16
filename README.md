@@ -24,17 +24,18 @@ pip install tk
 Finally, an Arduino UNO will be needed, with the following circuit:
 ![alt text for image](images/leds-port-serial.png)
 and the following program loaded:
-[link text](src/leds_serial.ino)
+[leds_serial.ino](src/leds_serial.ino)
 
 ## Program execution
 
 To execute the program we need to open the terminal and locate ourselves in the folder where the main program **main.py** is located, in this case said folder is src, once inside said directory, we will execute the following command:
-
+```bash
 python main.py
-
+```
 another alternative could be:
-
+```bash
 python3 main.py
+```
 
 ## Result of program execution
 
