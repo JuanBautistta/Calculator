@@ -24,7 +24,7 @@ pip install tk
 Finally, an Arduino UNO will be needed, with the following circuit:
 ![alt text for image](images/leds-port-serial.png)
 and the following program loaded:
-[leds_serial.ino](src/leds_serial.ino)
+[leds_serial.ino](src/arduino/leds_serial.ino)
 
 ## Program execution
 
